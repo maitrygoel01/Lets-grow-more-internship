@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LGMVIP REGISTRATION FORM </title>
+    <link rel="stylesheet" href="form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+
+</head>
+<body>
+     <div class="container">
+        <div class="login-link">
+            <div class="logo">
+                <i class='bx bx-pencil'></i>
+                <span class="text">
+                   LGMVIP
+                </span>
+            </div>
+            <p class="side-big-heading">Already a member</p>
+            
+            <p class="primary-bg-text">To keep track on your dashboard please login with your personal information</p>
+             <a href="login.html" class="loginbtn">Login</a>
+        </div>
+        <form action="" class="signup-form-container">
+             <p class="big-heading">
+                Create Account
+             </p>
+               <div class="social-media-platform">
+                 <a href="https://www.facebook.com/letsgrowmore/">
+                    <i class='bx bx-sm bxl-facebook'></i>
+                 </a>
+                 <a href="https://www.linkedin.com/company/letsgrowmore">
+                    <i class='bx bx-sm bxl-linkedin'></i>
+                 </a>
+                 <a href="https://www.instagram.com/letsgrowmore.in/">
+                    <i class='bx bx-sm bxl-instagram'></i>
+                 </a>
+               
+               </div>
+
+               <div class="progress-bar">
+                        <div class="stage">
+                            <p class="tool-tip">
+                                Personal info
+                            </p>
+                            <p class="stageno stageno-1">1</p>
+                        </div>
+                        <div class="stage">
+                            <p class="tool-tip">
+                                Contact info
+                            </p>
+                            <p class="stageno stageno-2">2</p>
+                        </div>
+                        <div class="stage">
+                            <p class="tool-tip">
+                                Final Submit
+                            </p>
+                            <p class="stageno stageno-3">3</p>
+                        </div>
+               </div>
+               <div class="signup-form-content">
+                     <div class="stage1-content">
+                          <div class="button-container">
+                            <div class="text-fields fname">
+                                <label for="fname"><i class='bx bx-user' ></i></label>
+                                <input type="text" name="fname" id="fname" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="text-fields lname">
+                                <label for="lname"><i class='bx bx-user' ></i></label>
+                                <input type="text" name="lname" id="lname" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <div class="text-fields dob">
+                                <input type="date" name="dob" id="dob"required>
+                            </div>
+                            <div class="gender-selection">
+                                <p class="field-heading">Gender : </p>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male">Male
+                                </label>
+                                <label for="female"><input type="radio" name="gender" id="female">Female</label>
+                            </div>
+                          </div>
+                          <div class="pagination-btns">
+                            <input type="button" value="Previous" class="previousPage stagebtn1b" onclick="stage1to2()">
+                            <input type="button" value="Next" class="nextPage stagebtn1b" onclick="stage1to2()">
+                        </div>
+                     </div>
+                     <div class="stage2-content">
+                        <div class="button-container">
+                            <div class="text-fields phone">
+                                <label for="phone"><i class='bx bx-phone' ></i></label>
+                                <input type="text" name="phone" id="phone" placeholder="phone number" required>
+                            </div>
+                            <div class="text-fields email">
+                                <label for="email"><i class='bx bx-envelope' ></i></label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email id" required>
+                            </div>
+                           </div>
+                            <div class="button-container">
+                                <div class="text-fields password">
+                                    <label for="password"><i class='bx bx-lock-alt' ></i></label>
+                                    <input type="password" name="password" id="password" placeholder="Enter password" required>
+                                </div>
+                                <div class="text-fields confirmpassword">
+                                    <label for="confirmpassword"><i class='bx bx-lock-alt' ></i></label>
+                                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Enter password" required>
+                                </div>
+                            </div>
+                            <div class="pagination-btns">
+                            <input type="button" value="Previous" class="previousPage stagebtn2b" onclick="stage2to1()">
+                            <input type="button" value="Next" class="nextPage stagebtn2b" onclick="stage2to3()">
+                        </div>
+                     </div>
+                     <div class="stage3-content">
+                        <div class="tc-container">
+                            <label for="tc" class="tc">
+                                <input type="checkbox" name="tc" id="tc" required>
+                                By submiting your details, you agree to the <a href="#"> terms and conditions. </a>
+                            </label>
+                        </div>
+                        <div class="pagination-btns">
+                            <input type="button" value="Previous" class="previousPage stagebtn3a" onclick="stage3to2()">
+                            <input type="submit" value="Submit" class="nextPage stagebtn3b" onclick="submitForm()">
+                        </div>
+                       </div>
+               </div>
+        
+        </form>
+     </div> 
+     
+     <div id="displayContainer"></div>
+ </body>
+ <script src="https://cdn.jsdelivr.net/boxicons/2.0.7/boxicons.js"></script>
+
+<script src="form.js"></script>
+
+</html>
